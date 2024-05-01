@@ -4,15 +4,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Picture in Picture</title>
     <link rel="icon" type="image/png" href="https://www.google.com/s2/u/0/favicons?domain=dabl.sk">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Video -->
     <video controls height="360" width="640" hidden id="video"></video>
     <!-- Button-->
+<div class="buttons-container">
     <div class="button-container">
-        <button id="button">START</button>
+        <button id="startStream">Start Streaming</button>
     </div>
+    <div class="button-container">
+        <button id="button">START PictureInPicture</button>
+    </div>
+    <h2 class="textSystem">
+        Refresh the page to stop the stream
+    </h2>
+</div>
     <!-- script -->
     <script src="script.js"></script>
 </body>
